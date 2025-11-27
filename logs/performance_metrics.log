@@ -1,0 +1,975 @@
+2025-11-27 19:35:26,607 - Knowledge - INFO - Created shared MongoDB connection pool
+2025-11-27 19:35:26,607 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2025-11-27 19:35:26,609 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2025-11-27 19:35:26,610 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=25, max_concurrent_llm_calls=50
+2025-11-27 19:35:27,672 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2025-11-27 19:35:27,672 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2025-11-27 19:35:27,673 - Knowledge - INFO - load persisted knowledge: begin
+2025-11-27 19:35:27,673 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2025-11-27 19:35:27,674 - Knowledge - INFO - load persisted knowledge: end
+2025-11-27 19:35:27,674 - Knowledge - WARNING - No persisted knowledge found. Files will be queued during start()
+2025-11-27 19:35:27,675 - Knowledge - INFO - Redis support added with prefix knowledge:b2989zz:
+2025-11-27 19:35:27,695 - Knowledge - INFO - Starting knowledge initialization for ID: BynKvy-b2989zz
+2025-11-27 19:35:27,696 - Knowledge - INFO - 🔍 Checking Redis for build_id: b2989zz
+2025-11-27 19:35:27,696 - Knowledge - INFO - 🔍 Full session ID: BynKvy-b2989zz
+2025-11-27 19:35:27,696 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b2989zz:
+2025-11-27 19:35:27,696 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2025-11-27 19:35:27,696 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2025-11-27 19:35:27,697 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b2989zz
+2025-11-27 19:35:27,700 - Knowledge - WARNING - ❌ No Redis cache found
+2025-11-27 19:35:27,704 - Knowledge - INFO - 📁 Loading knowledge from disk...
+2025-11-27 19:35:27,711 - Knowledge - INFO - load persisted docinfo: begin
+2025-11-27 19:35:27,711 - Knowledge - INFO - load persisted docinfo: end
+2025-11-27 19:35:27,712 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2025-11-27 19:35:27,712 - Knowledge - INFO - ✅ load_from_redis method found - attempting Redis load
+2025-11-27 19:35:27,712 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2025-11-27 19:35:27,713 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b2989zz
+2025-11-27 19:35:27,715 - Knowledge - WARNING - ❌ No Redis cache found
+2025-11-27 19:35:27,715 - Knowledge - INFO - ❌ Redis load returned False - falling back to file loading
+2025-11-27 19:35:27,715 - Knowledge - INFO - load persisted knowledge: begin
+2025-11-27 19:35:27,716 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2025-11-27 19:35:27,716 - Knowledge - INFO - load persisted knowledge: end
+2025-11-27 19:35:27,716 - Knowledge - INFO - 📁 Disk load complete in 0.01s
+2025-11-27 19:35:27,716 - Knowledge - INFO - Populating ingest queue with source files...
+2025-11-27 19:35:27,736 - Knowledge - INFO - Added 226 files from /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517 to ingest queue
+2025-11-27 19:35:27,737 - Knowledge - INFO - Worker kw1 created using shared MongoDB connection pool
+2025-11-27 19:35:27,737 - Knowledge - INFO - knowledge worker kw1 start
+2025-11-27 19:35:27,737 - Knowledge - INFO - Worker kw2 created using shared MongoDB connection pool
+2025-11-27 19:35:27,738 - Knowledge - INFO - knowledge worker kw2 start
+2025-11-27 19:35:27,738 - Knowledge - INFO - [kw1] Queue=226, InProgress=0, PendingWorkers=0/1, Completed=0/226 (0.0%)
+2025-11-27 19:35:27,739 - Knowledge - INFO - Batch sizing: calculated=15, max_allowed=25, queue=226, active_workers=0/1
+2025-11-27 19:35:27,739 - Knowledge - INFO - Worker kw1 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cov_build.sh
+2025-11-27 19:35:27,740 - Knowledge - INFO - [kw2] Queue=211, InProgress=0, PendingWorkers=1/1, Completed=0/226 (0.0%)
+2025-11-27 19:35:27,740 - Knowledge - INFO - Batch sizing: calculated=15, max_allowed=25, queue=211, active_workers=1/1
+2025-11-27 19:35:27,740 - Knowledge - INFO - Worker kw3 created using shared MongoDB connection pool
+2025-11-27 19:35:27,741 - Knowledge - INFO - Worker kw2 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsJsonRpc.h
+2025-11-27 19:35:27,741 - Knowledge - INFO - knowledge worker kw3 start
+2025-11-27 19:35:27,742 - Knowledge - INFO - Worker kw4 created using shared MongoDB connection pool
+2025-11-27 19:35:27,744 - Knowledge - INFO - [kw3] Queue=196, InProgress=0, PendingWorkers=2/3, Completed=0/226 (0.0%)
+2025-11-27 19:35:27,744 - Knowledge - INFO - Batch sizing: calculated=12, max_allowed=25, queue=196, active_workers=2/3
+2025-11-27 19:35:27,744 - Knowledge - INFO - Worker kw3 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/PingPong/PingPongDisabled.h
+2025-11-27 19:35:27,745 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/PingPong/PingPongDisabled.h (ext=.h, size=1228)
+2025-11-27 19:35:27,745 - Knowledge - INFO - knowledge worker kw4 start
+2025-11-27 19:35:27,746 - Knowledge - INFO - Worker kw3 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/WSEndpoint.h
+2025-11-27 19:35:27,746 - Knowledge - INFO - Worker kw5 created using shared MongoDB connection pool
+2025-11-27 19:35:27,754 - Knowledge - INFO - [kw4] Queue=184, InProgress=0, PendingWorkers=3/4, Completed=0/226 (0.0%)
+2025-11-27 19:35:27,764 - Knowledge - INFO - Worker kw1 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsLOG_MILESTONE.h
+2025-11-27 19:35:27,775 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/WSEndpoint.h (small file (2873 bytes))
+2025-11-27 19:35:27,776 - Knowledge - INFO - Worker kw2 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsgetRFCConfig.h
+2025-11-27 19:35:27,777 - Knowledge - INFO - knowledge worker kw5 start
+2025-11-27 19:35:27,777 - Knowledge - INFO - Worker kw6 created using shared MongoDB connection pool
+2025-11-27 19:35:27,779 - Knowledge - INFO - Batch sizing: calculated=12, max_allowed=25, queue=184, active_workers=3/5
+2025-11-27 19:35:27,779 - Knowledge - INFO - Worker kw4 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Request.cpp
+2025-11-27 19:35:27,780 - Knowledge - INFO - Worker kw3 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/WSEndpoint.cpp
+2025-11-27 19:35:27,784 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsgetRFCConfig.h (ext=.h, size=1043)
+2025-11-27 19:35:27,785 - Knowledge - INFO - [kw5] Queue=172, InProgress=0, PendingWorkers=4/5, Completed=0/226 (0.0%)
+2025-11-27 19:35:27,786 - Knowledge - INFO - Batch sizing: calculated=12, max_allowed=25, queue=172, active_workers=4/5
+2025-11-27 19:35:27,787 - Knowledge - INFO - Worker kw5 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/clang.cmake
+2025-11-27 19:35:27,788 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/clang.cmake (ext=.cmake, size=1339)
+2025-11-27 19:35:27,788 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsLOG_MILESTONE.h (ext=.h, size=810)
+2025-11-27 19:35:27,789 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Request.cpp (ext=.cpp, size=1781)
+2025-11-27 19:35:27,790 - Knowledge - INFO - Worker kw5 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/gcc-with-coverage.cmake
+2025-11-27 19:35:27,791 - Knowledge - INFO - Worker kw1 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsString.h
+2025-11-27 19:35:27,791 - Knowledge - INFO - Worker kw2 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsInputValidator.h
+2025-11-27 19:35:27,792 - Knowledge - INFO - knowledge worker kw6 start
+2025-11-27 19:35:27,795 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/gcc-with-coverage.cmake (ext=.cmake, size=756)
+2025-11-27 19:35:27,795 - Knowledge - INFO - Worker kw7 created using shared MongoDB connection pool
+2025-11-27 19:35:27,796 - Knowledge - INFO - Worker kw5 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_ScreenCapture.cpp
+2025-11-27 19:35:27,797 - Knowledge - INFO - Worker kw4 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Request.h
+2025-11-27 19:35:27,800 - Knowledge - INFO - knowledge worker kw7 start
+2025-11-27 19:35:27,800 - Knowledge - INFO - Worker kw8 created using shared MongoDB connection pool
+2025-11-27 19:35:27,801 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_ScreenCapture.cpp (ext=.cpp, size=7748)
+2025-11-27 19:35:27,802 - Knowledge - INFO - knowledge worker kw8 start
+2025-11-27 19:35:27,802 - Knowledge - INFO - Worker kw9 created using shared MongoDB connection pool
+2025-11-27 19:35:27,804 - Knowledge - INFO - [kw6] Queue=160, InProgress=0, PendingWorkers=5/8, Completed=0/226 (0.0%)
+2025-11-27 19:35:27,805 - Knowledge - INFO - Worker kw5 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_UtilsFile.cpp
+2025-11-27 19:35:27,810 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_UtilsFile.cpp (ext=.cpp, size=1934)
+2025-11-27 19:35:27,811 - Knowledge - INFO - Worker kw2 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/PowerManagerInterface.h
+2025-11-27 19:35:27,816 - Knowledge - INFO - Worker kw3 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/ConnectionInitializationResult.h
+2025-11-27 19:35:27,823 - Knowledge - INFO - [kw7] Queue=160, InProgress=0, PendingWorkers=5/8, Completed=0/226 (0.0%)
+2025-11-27 19:35:27,824 - Knowledge - INFO - Worker kw1 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsUnused.h
+2025-11-27 19:35:27,824 - Knowledge - INFO - Batch sizing: calculated=12, max_allowed=25, queue=160, active_workers=5/8
+2025-11-27 19:35:27,831 - Knowledge - INFO - knowledge worker kw9 start
+2025-11-27 19:35:27,836 - Knowledge - INFO - Batch sizing: calculated=12, max_allowed=25, queue=160, active_workers=5/8
+2025-11-27 19:35:27,837 - Knowledge - INFO - Worker kw10 created using shared MongoDB connection pool
+2025-11-27 19:35:27,837 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Request.h (ext=.h, size=1283)
+2025-11-27 19:35:27,837 - Knowledge - INFO - Worker kw5 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_TextToSpeech.cpp
+2025-11-27 19:35:27,838 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_TextToSpeech.cpp (ext=.cpp, size=63627)
+2025-11-27 19:35:27,839 - Knowledge - INFO - Worker kw5 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_SystemAudioPlayer.cpp
+2025-11-27 19:35:27,841 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/ConnectionInitializationResult.h (ext=.h, size=1319)
+2025-11-27 19:35:27,842 - Knowledge - INFO - Worker kw3 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/CommunicationInterface/CommandInterface.h
+2025-11-27 19:35:27,844 - Knowledge - INFO - [kw9] Queue=148, InProgress=0, PendingWorkers=6/9, Completed=0/226 (0.0%)
+2025-11-27 19:35:27,844 - Knowledge - INFO - Batch sizing: calculated=12, max_allowed=25, queue=148, active_workers=6/9
+2025-11-27 19:35:27,847 - Knowledge - INFO - Worker kw7 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/CHANGELOG.md
+2025-11-27 19:35:27,847 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/CommunicationInterface/CommandInterface.h (small file (2143 bytes))
+2025-11-27 19:35:27,848 - Knowledge - INFO - [kw8] Queue=136, InProgress=0, PendingWorkers=7/9, Completed=0/226 (0.0%)
+2025-11-27 19:35:27,848 - Knowledge - INFO - Batch sizing: calculated=12, max_allowed=25, queue=136, active_workers=7/9
+2025-11-27 19:35:27,849 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/PowerManagerInterface.h (ext=.h, size=1006)
+2025-11-27 19:35:27,849 - Knowledge - INFO - Worker kw2 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsTelemetry.h
+2025-11-27 19:35:27,850 - Knowledge - INFO - Worker kw9 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/CryptographyExtAccess.h
+2025-11-27 19:35:27,850 - Knowledge - INFO - Worker kw6 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindIARMBus.cmake
+2025-11-27 19:35:27,851 - Knowledge - INFO - knowledge worker kw10 start
+2025-11-27 19:35:27,851 - Knowledge - INFO - Worker kw4 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Response.cpp
+2025-11-27 19:35:27,852 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Response.cpp (small file (2421 bytes))
+2025-11-27 19:35:27,852 - Knowledge - INFO - Worker kw4 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/Encryption/TlsEnabled.h
+2025-11-27 19:35:27,853 - Knowledge - INFO - Worker kw11 created using shared MongoDB connection pool
+2025-11-27 19:35:27,854 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_SystemAudioPlayer.cpp (ext=.cpp, size=64470)
+2025-11-27 19:35:27,856 - Knowledge - INFO - Worker kw5 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_LinearPlaybackControl.cpp
+2025-11-27 19:35:27,856 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_LinearPlaybackControl.cpp (ext=.cpp, size=27480)
+2025-11-27 19:35:27,860 - Knowledge - INFO - Worker kw5 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_UnifiedCASManagement.cpp
+2025-11-27 19:35:27,866 - Knowledge - INFO - Worker kw4 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/Encryption/NoEncryption.h
+2025-11-27 19:35:27,866 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_UnifiedCASManagement.cpp (ext=.cpp, size=7169)
+2025-11-27 19:35:27,872 - Knowledge - INFO - knowledge worker kw11 start
+2025-11-27 19:35:27,874 - Knowledge - INFO - [kw10] Queue=124, InProgress=0, PendingWorkers=8/10, Completed=0/226 (0.0%)
+2025-11-27 19:35:27,875 - Knowledge - INFO - Worker kw12 created using shared MongoDB connection pool
+2025-11-27 19:35:27,876 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsTelemetry.h (ext=.h, size=1892)
+2025-11-27 19:35:27,877 - Knowledge - INFO - Worker kw8 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindGStreamerVideo.cmake
+2025-11-27 19:35:27,877 - Knowledge - INFO - Worker kw3 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/CommunicationInterface/BinaryInterface.h
+2025-11-27 19:35:27,878 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/CommunicationInterface/BinaryInterface.h (ext=.h, size=1699)
+2025-11-27 19:35:27,879 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindIARMBus.cmake (ext=.cmake, size=1735)
+2025-11-27 19:35:27,880 - Knowledge - INFO - Worker kw6 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindCEC.cmake
+2025-11-27 19:35:27,880 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindCEC.cmake (ext=.cmake, size=1947)
+2025-11-27 19:35:27,880 - Knowledge - INFO - Worker kw6 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindGLIB.cmake
+2025-11-27 19:35:27,886 - Knowledge - INFO - [kw11] Queue=112, InProgress=0, PendingWorkers=9/11, Completed=0/226 (0.0%)
+2025-11-27 19:35:27,887 - Knowledge - INFO - Batch sizing: calculated=12, max_allowed=25, queue=112, active_workers=9/11
+2025-11-27 19:35:27,888 - Knowledge - INFO - Worker kw9 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/Module.h
+2025-11-27 19:35:27,891 - Knowledge - INFO - Batch sizing: calculated=12, max_allowed=25, queue=124, active_workers=9/11
+2025-11-27 19:35:27,891 - Knowledge - INFO - Worker kw2 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/PluginInterfaceBuilder.h
+2025-11-27 19:35:27,892 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindGStreamerVideo.cmake (small file (2892 bytes))
+2025-11-27 19:35:27,894 - Knowledge - INFO - Worker kw3 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/CommunicationInterface/JsonRpcInterface.h
+2025-11-27 19:35:27,894 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsUnused.h (ext=.h, size=750)
+2025-11-27 19:35:27,895 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/CHANGELOG.md (ext=.md, size=1015)
+2025-11-27 19:35:27,895 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/Encryption/NoEncryption.h (ext=.h, size=1649)
+2025-11-27 19:35:27,896 - Knowledge - INFO - Worker kw5 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_PlayerInfo.cpp
+2025-11-27 19:35:27,896 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_PlayerInfo.cpp (ext=.cpp, size=8043)
+2025-11-27 19:35:27,899 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/Module.h (ext=.h, size=871)
+2025-11-27 19:35:27,899 - Knowledge - INFO - knowledge worker kw12 start
+2025-11-27 19:35:27,900 - Knowledge - INFO - Worker kw13 created using shared MongoDB connection pool
+2025-11-27 19:35:27,906 - Knowledge - INFO - Worker kw9 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/CHANGELOG.md
+2025-11-27 19:35:27,908 - Knowledge - INFO - Worker kw8 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindUdev.cmake
+2025-11-27 19:35:27,909 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindUdev.cmake (ext=.cmake, size=769)
+2025-11-27 19:35:27,909 - Knowledge - INFO - Worker kw8 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindSqliteSee.cmake
+2025-11-27 19:35:27,911 - Knowledge - INFO - Worker kw7 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/UnifiedCASManagement.h
+2025-11-27 19:35:27,917 - Knowledge - INFO - Worker kw4 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/tests/LinearPlaybackControl_L2Test.cpp
+2025-11-27 19:35:27,918 - Knowledge - INFO - Worker kw2 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsgetFileContent.h
+2025-11-27 19:35:27,920 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/tests/LinearPlaybackControl_L2Test.cpp (ext=.cpp, size=21733)
+2025-11-27 19:35:27,922 - Knowledge - INFO - Worker kw11 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/NetworkStatusObserver.h
+2025-11-27 19:35:27,922 - Knowledge - INFO - [kw12] Queue=100, InProgress=0, PendingWorkers=10/12, Completed=0/226 (0.0%)
+2025-11-27 19:35:27,928 - Knowledge - INFO - Worker kw6 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindNEXUS.cmake
+2025-11-27 19:35:27,930 - Knowledge - INFO - Worker kw10 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/RFCURLObserver.h
+2025-11-27 19:35:27,945 - Knowledge - INFO - knowledge worker kw13 start
+2025-11-27 19:35:27,946 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/CHANGELOG.md (ext=.md, size=17323)
+2025-11-27 19:35:27,951 - Knowledge - INFO - Worker kw14 created using shared MongoDB connection pool
+2025-11-27 19:35:27,952 - Knowledge - INFO - Worker kw9 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/README.md
+2025-11-27 19:35:27,952 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/README.md (ext=.md, size=70)
+2025-11-27 19:35:27,952 - Knowledge - INFO - Worker kw9 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/CMakeLists.txt
+2025-11-27 19:35:27,953 - Knowledge - INFO - Worker kw5 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/CMakeLists.txt
+2025-11-27 19:35:27,954 - Knowledge - INFO - Worker kw4 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/tests/TextToSpeech_L2test.cpp
+2025-11-27 19:35:27,969 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/UnifiedCASManagement.h (small file (2410 bytes))
+2025-11-27 19:35:27,969 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/NetworkStatusObserver.h (ext=.h, size=1374)
+2025-11-27 19:35:27,970 - Knowledge - INFO - Batch sizing: calculated=10, max_allowed=25, queue=100, active_workers=11/13
+2025-11-27 19:35:27,993 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/RFCURLObserver.h (ext=.h, size=1473)
+2025-11-27 19:35:27,994 - Knowledge - INFO - [kw13] Queue=88, InProgress=0, PendingWorkers=11/13, Completed=0/226 (0.0%)
+2025-11-27 19:35:27,994 - Knowledge - INFO - Worker kw2 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilssyncPersistFile.h
+2025-11-27 19:35:27,994 - Knowledge - INFO - Batch sizing: calculated=10, max_allowed=25, queue=88, active_workers=11/13
+2025-11-27 19:35:28,021 - Knowledge - INFO - knowledge worker kw14 start
+2025-11-27 19:35:28,036 - Knowledge - INFO - Worker kw1 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsFile.h
+2025-11-27 19:35:28,046 - Knowledge - INFO - Worker kw15 created using shared MongoDB connection pool
+2025-11-27 19:35:28,056 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/CMakeLists.txt (ext=.txt, size=2778)
+2025-11-27 19:35:28,060 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/CMakeLists.txt (ext=.txt, size=6057)
+2025-11-27 19:35:28,060 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/tests/TextToSpeech_L2test.cpp (ext=.cpp, size=25330)
+2025-11-27 19:35:28,061 - Knowledge - INFO - Worker kw7 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/LibMediaPlayerImpl.h
+2025-11-27 19:35:28,063 - Knowledge - INFO - Worker kw11 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/NetworkStatusObserver.cpp
+2025-11-27 19:35:28,063 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindNEXUS.cmake (small file (2835 bytes))
+2025-11-27 19:35:28,065 - Knowledge - INFO - Worker kw12 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/ScreenCapture.h
+2025-11-27 19:35:28,079 - Knowledge - INFO - Worker kw10 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSManager.h
+2025-11-27 19:35:28,079 - Knowledge - INFO - Worker kw3 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/Roles/SingleClientServer.h
+2025-11-27 19:35:28,082 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindSqliteSee.cmake (ext=.cmake, size=774)
+2025-11-27 19:35:28,084 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilssyncPersistFile.h (ext=.h, size=1541)
+2025-11-27 19:35:28,084 - Knowledge - INFO - Worker kw13 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/ScreenCapture.cpp
+2025-11-27 19:35:28,087 - Knowledge - INFO - Worker kw9 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindAC.cmake
+2025-11-27 19:35:28,088 - Knowledge - INFO - knowledge worker kw15 start
+2025-11-27 19:35:28,091 - Knowledge - INFO - Worker kw16 created using shared MongoDB connection pool
+2025-11-27 19:35:28,091 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsFile.h (small file (2625 bytes))
+2025-11-27 19:35:28,094 - Knowledge - INFO - Worker kw5 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/Module.cpp
+2025-11-27 19:35:28,097 - Knowledge - INFO - Worker kw13 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/ScreenCaptureImplementation.h
+2025-11-27 19:35:28,098 - Knowledge - INFO - Worker kw4 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/tests/UnifiedCASManagement_L2Test.cpp
+2025-11-27 19:35:28,113 - Knowledge - INFO - Worker kw6 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindLMPLAYER.cmake
+2025-11-27 19:35:28,116 - Knowledge - INFO - Worker kw8 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindTTS.cmake
+2025-11-27 19:35:28,117 - Knowledge - INFO - Worker kw2 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsSearchRDKProfile.h
+2025-11-27 19:35:28,120 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindAC.cmake (ext=.cmake, size=1567)
+2025-11-27 19:35:28,128 - Knowledge - INFO - Worker kw7 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/CMakeLists.txt
+2025-11-27 19:35:28,128 - Knowledge - INFO - [kw14] Queue=68, InProgress=0, PendingWorkers=13/15, Completed=0/226 (0.0%)
+2025-11-27 19:35:28,129 - Knowledge - INFO - knowledge worker kw16 start
+2025-11-27 19:35:28,130 - Knowledge - INFO - [kw15] Queue=68, InProgress=0, PendingWorkers=13/15, Completed=0/226 (0.0%)
+2025-11-27 19:35:28,131 - Knowledge - INFO - Worker kw17 created using shared MongoDB connection pool
+2025-11-27 19:35:28,131 - Knowledge - INFO - Worker kw1 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsSynchroIarm.hpp
+2025-11-27 19:35:28,141 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/Module.cpp (ext=.cpp, size=765)
+2025-11-27 19:35:28,142 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/tests/UnifiedCASManagement_L2Test.cpp (ext=.cpp, size=7233)
+2025-11-27 19:35:28,143 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindLMPLAYER.cmake (ext=.cmake, size=1899)
+2025-11-27 19:35:28,146 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindTTS.cmake (ext=.cmake, size=1379)
+2025-11-27 19:35:28,150 - Knowledge - INFO - Worker kw9 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindBCM_HOST.cmake
+2025-11-27 19:35:28,150 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsSearchRDKProfile.h (small file (2043 bytes))
+2025-11-27 19:35:28,151 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/CMakeLists.txt (ext=.txt, size=3260)
+2025-11-27 19:35:28,151 - Knowledge - INFO - Worker kw7 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/LibMediaPlayerImpl.cpp
+2025-11-27 19:35:28,152 - Knowledge - INFO - Batch sizing: calculated=10, max_allowed=25, queue=68, active_workers=13/16
+2025-11-27 19:35:28,153 - Knowledge - INFO - Worker kw15 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/SecurityParameters.h
+2025-11-27 19:35:28,155 - Knowledge - INFO - Worker kw5 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/doc/UnifiedCASManagementService.md
+2025-11-27 19:35:28,155 - Knowledge - INFO - Worker kw4 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/tests/PlayerInfo_L2Test.cpp
+2025-11-27 19:35:28,156 - Knowledge - INFO - Worker kw6 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindCTRLM.cmake
+2025-11-27 19:35:28,161 - Knowledge - INFO - Worker kw11 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSSpeaker.cpp
+2025-11-27 19:35:28,169 - Knowledge - INFO - Worker kw8 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindLibSoup.cmake
+2025-11-27 19:35:28,170 - Knowledge - INFO - Worker kw2 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsCStr.h
+2025-11-27 19:35:28,171 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindLibSoup.cmake (ext=.cmake, size=1398)
+2025-11-27 19:35:28,173 - Knowledge - INFO - Batch sizing: calculated=10, max_allowed=25, queue=68, active_workers=14/16
+2025-11-27 19:35:28,179 - Knowledge - INFO - [kw16] Queue=58, InProgress=0, PendingWorkers=14/16, Completed=0/226 (0.0%)
+2025-11-27 19:35:28,180 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/SecurityParameters.h (ext=.h, size=925)
+2025-11-27 19:35:28,186 - Knowledge - INFO - Worker kw3 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/Roles/Client.h
+2025-11-27 19:35:28,186 - Knowledge - INFO - knowledge worker kw17 start
+2025-11-27 19:35:28,196 - Knowledge - INFO - Worker kw18 created using shared MongoDB connection pool
+2025-11-27 19:35:28,196 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/doc/UnifiedCASManagementService.md (ext=.md, size=7810)
+2025-11-27 19:35:28,197 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/tests/PlayerInfo_L2Test.cpp (ext=.cpp, size=6001)
+2025-11-27 19:35:28,198 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindCTRLM.cmake (ext=.cmake, size=1245)
+2025-11-27 19:35:28,205 - Knowledge - INFO - Worker kw1 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsfileExists.h
+2025-11-27 19:35:28,212 - Knowledge - INFO - Worker kw10 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSSpeaker.h
+2025-11-27 19:35:28,218 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindBCM_HOST.cmake (small file (2134 bytes))
+2025-11-27 19:35:28,218 - Knowledge - INFO - Worker kw13 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Module.h
+2025-11-27 19:35:28,227 - Knowledge - INFO - Worker kw12 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Implementation/drm/drmsc.cpp
+2025-11-27 19:35:28,232 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsCStr.h (ext=.h, size=746)
+2025-11-27 19:35:28,232 - Knowledge - INFO - Worker kw7 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/MediaPlayer.h
+2025-11-27 19:35:28,246 - Knowledge - INFO - Worker kw2 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsBIT.h
+2025-11-27 19:35:28,246 - Knowledge - INFO - Worker kw11 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSURLConstructer.h
+2025-11-27 19:35:28,256 - Knowledge - INFO - Worker kw14 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/AudioPlayer.cpp
+2025-11-27 19:35:28,280 - Knowledge - INFO - Batch sizing: calculated=10, max_allowed=25, queue=58, active_workers=15/17
+2025-11-27 19:35:28,287 - Knowledge - INFO - Worker kw15 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/logger.cpp
+2025-11-27 19:35:28,288 - Knowledge - INFO - [kw17] Queue=48, InProgress=0, PendingWorkers=15/17, Completed=0/226 (0.0%)
+2025-11-27 19:35:28,290 - Knowledge - INFO - knowledge worker kw18 start
+2025-11-27 19:35:28,290 - Knowledge - INFO - Worker kw19 created using shared MongoDB connection pool
+2025-11-27 19:35:28,290 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/Roles/Client.h (small file (2756 bytes))
+2025-11-27 19:35:28,291 - Knowledge - INFO - Worker kw4 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/tests/ScreenCapture_L2Test.cpp
+2025-11-27 19:35:28,292 - Knowledge - INFO - Worker kw6 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindDS.cmake
+2025-11-27 19:35:28,293 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindDS.cmake (ext=.cmake, size=1842)
+2025-11-27 19:35:28,297 - Knowledge - INFO - Worker kw9 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindSqlite.cmake
+2025-11-27 19:35:28,304 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Module.h (ext=.h, size=877)
+2025-11-27 19:35:28,312 - Knowledge - INFO - Worker kw10 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeechImplementation.h
+2025-11-27 19:35:28,312 - Knowledge - INFO - Worker kw8 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeechImplementation.cpp
+2025-11-27 19:35:28,316 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/MediaPlayer.h (small file (2293 bytes))
+2025-11-27 19:35:28,321 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsBIT.h (ext=.h, size=1312)
+2025-11-27 19:35:28,326 - Knowledge - INFO - Worker kw12 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Implementation/drm/kms.h
+2025-11-27 19:35:28,337 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSURLConstructer.h (ext=.h, size=1698)
+2025-11-27 19:35:28,339 - Knowledge - INFO - Worker kw16 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/SystemAudioPlayer.h
+2025-11-27 19:35:28,340 - Knowledge - INFO - Batch sizing: calculated=10, max_allowed=25, queue=48, active_workers=16/18
+2025-11-27 19:35:28,347 - Knowledge - INFO - Worker kw14 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/WebSocketClientImpl.h
+2025-11-27 19:35:28,358 - Knowledge - INFO - Worker kw3 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Notification.h
+2025-11-27 19:35:28,359 - Knowledge - INFO - [kw18] Queue=38, InProgress=0, PendingWorkers=16/18, Completed=6/226 (2.7%)
+2025-11-27 19:35:28,364 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/tests/ScreenCapture_L2Test.cpp (ext=.cpp, size=14048)
+2025-11-27 19:35:28,369 - Knowledge - INFO - Worker kw15 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/UnsecuredWebSocketClient.cpp
+2025-11-27 19:35:28,370 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsfileExists.h (ext=.h, size=880)
+2025-11-27 19:35:28,382 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindSqlite.cmake (ext=.cmake, size=771)
+2025-11-27 19:35:28,383 - Knowledge - INFO - knowledge worker kw19 start
+2025-11-27 19:35:28,386 - Knowledge - INFO - Worker kw13 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/ScreenCaptureImplementation.cpp
+2025-11-27 19:35:28,388 - Knowledge - INFO - Worker kw20 created using shared MongoDB connection pool
+2025-11-27 19:35:28,391 - Knowledge - INFO - Worker kw7 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/Module.h
+2025-11-27 19:35:28,396 - Knowledge - INFO - Worker kw2 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsThreadRAII.h
+2025-11-27 19:35:28,402 - Knowledge - INFO - Worker kw10 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/CHANGELOG.md
+2025-11-27 19:35:28,418 - Knowledge - INFO - Worker kw8 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeech.cpp
+2025-11-27 19:35:28,422 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Implementation/drm/kms.h (small file (3053 bytes))
+2025-11-27 19:35:28,426 - Knowledge - INFO - Worker kw11 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSURLConstructer.cpp
+2025-11-27 19:35:28,441 - Knowledge - INFO - Worker kw17 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/OCDM.cpp
+2025-11-27 19:35:28,445 - Knowledge - INFO - Batch sizing: calculated=10, max_allowed=25, queue=38, active_workers=17/19
+2025-11-27 19:35:28,446 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Notification.h (ext=.h, size=1157)
+2025-11-27 19:35:28,446 - Knowledge - INFO - Worker kw4 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/CMakeLists.txt
+2025-11-27 19:35:28,447 - Knowledge - INFO - Processing batch of 12 files
+2025-11-27 19:35:28,448 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/UnsecuredWebSocketClient.cpp (ext=.cpp, size=1374)
+2025-11-27 19:35:28,450 - Knowledge - INFO - Worker kw6 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindDL.cmake
+2025-11-27 19:35:28,453 - Knowledge - INFO - Worker kw1 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/frontpanel.h
+2025-11-27 19:35:28,463 - Knowledge - INFO - Worker kw11 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/RFCURLObserver.cpp
+2025-11-27 19:35:28,466 - Knowledge - INFO - Worker kw9 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindCurl.cmake
+2025-11-27 19:35:28,467 - Knowledge - INFO - Worker kw14 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/CHANGELOG.md
+2025-11-27 19:35:28,481 - Knowledge - INFO - [kw19] Queue=28, InProgress=0, PendingWorkers=17/19, Completed=12/226 (5.3%)
+2025-11-27 19:35:28,487 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/Module.h (ext=.h, size=877)
+2025-11-27 19:35:28,492 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsThreadRAII.h (ext=.h, size=1417)
+2025-11-27 19:35:28,500 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/CHANGELOG.md (ext=.md, size=1143)
+2025-11-27 19:35:28,504 - Knowledge - INFO - Worker kw13 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/build_dependencies.sh
+2025-11-27 19:35:28,513 - Knowledge - INFO - Worker kw12 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Implementation/drm/drmsc.h
+2025-11-27 19:35:28,516 - Knowledge - INFO - knowledge worker kw20 start
+2025-11-27 19:35:28,518 - Knowledge - INFO - Worker kw18 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/Module.h
+2025-11-27 19:35:28,518 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/Module.h (ext=.h, size=854)
+2025-11-27 19:35:28,519 - Knowledge - INFO - Worker kw18 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/LinearConfig.h
+2025-11-27 19:35:28,524 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/clang.cmake
+2025-11-27 19:35:28,525 - Knowledge - INFO - Worker kw15 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/BufferQueue.cpp
+2025-11-27 19:35:28,529 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/BufferQueue.cpp (small file (2977 bytes))
+2025-11-27 19:35:28,530 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindCurl.cmake (ext=.cmake, size=1002)
+2025-11-27 19:35:28,536 - Knowledge - INFO - Batch sizing: calculated=10, max_allowed=25, queue=28, active_workers=18/20
+2025-11-27 19:35:28,539 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/CHANGELOG.md (ext=.md, size=1015)
+2025-11-27 19:35:28,540 - Knowledge - INFO - Worker kw19 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/Module.h
+2025-11-27 19:35:28,541 - Knowledge - INFO - Worker kw2 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/frontpanel.cpp
+2025-11-27 19:35:28,543 - Knowledge - INFO - Worker kw10 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeechValidator.h
+2025-11-27 19:35:28,546 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Implementation/drm/drmsc.h (ext=.h, size=1155)
+2025-11-27 19:35:28,551 - Knowledge - INFO - Worker kw8 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/Module.cpp
+2025-11-27 19:35:28,551 - Knowledge - INFO - [kw20] Queue=8, InProgress=0, PendingWorkers=19/20, Completed=12/226 (5.3%)
+2025-11-27 19:35:28,554 - Knowledge - INFO - Worker kw3 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Notification.cpp
+2025-11-27 19:35:28,558 - Knowledge - INFO - Worker kw16 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/services.cmake
+2025-11-27 19:35:28,566 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/CMakeLists.txt (ext=.txt, size=3731)
+2025-11-27 19:35:28,570 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/LinearConfig.h (ext=.h, size=1563)
+2025-11-27 19:35:28,591 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/gcc-with-coverage.cmake
+2025-11-27 19:35:28,602 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindDL.cmake (ext=.cmake, size=796)
+2025-11-27 19:35:28,603 - Knowledge - INFO - Worker kw6 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/Findjsoncpp.cmake
+2025-11-27 19:35:28,603 - Knowledge - INFO - Worker kw17 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/Module.h
+2025-11-27 19:35:28,611 - Knowledge - INFO - Worker kw1 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsIarm.h
+2025-11-27 19:35:28,614 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/Findjsoncpp.cmake (ext=.cmake, size=1853)
+2025-11-27 19:35:28,615 - Knowledge - INFO - Worker kw11 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/logger.h
+2025-11-27 19:35:28,615 - Knowledge - INFO - Worker kw7 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/UnifiedCASManagement.cpp
+2025-11-27 19:35:28,629 - Knowledge - INFO - Worker kw13 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/SystemAudioPlayer.cpp
+2025-11-27 19:35:28,634 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/Module.h (ext=.h, size=1042)
+2025-11-27 19:35:28,647 - Knowledge - INFO - Worker kw7 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/CryptographyExtAccess.cpp
+2025-11-27 19:35:28,650 - Knowledge - INFO - Worker kw12 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Implementation/drm/kms.cpp
+2025-11-27 19:35:28,667 - Knowledge - INFO - Batch sizing: calculated=8, max_allowed=25, queue=8, active_workers=19/20
+2025-11-27 19:35:28,679 - Knowledge - INFO - Worker kw2 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsLogging.h
+2025-11-27 19:35:28,687 - Knowledge - INFO - Worker kw4 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/README.md
+2025-11-27 19:35:28,689 - Knowledge - INFO - Worker kw18 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/DemuxerStreamFsFCC.h
+2025-11-27 19:35:28,689 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Notification.cpp (ext=.cpp, size=1518)
+2025-11-27 19:35:28,693 - Knowledge - INFO - Worker kw10 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/test/CMakeLists.txt
+2025-11-27 19:35:28,695 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_ScreenCapture.cpp
+2025-11-27 19:35:28,704 - Knowledge - INFO - Worker kw15 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/IWebSocketClient.h
+2025-11-27 19:35:28,708 - Knowledge - INFO - Worker kw9 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindPlabels.cmake
+2025-11-27 19:35:28,719 - Knowledge - INFO - Worker kw12 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Module.cpp
+2025-11-27 19:35:28,719 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/Module.h (ext=.h, size=1211)
+2025-11-27 19:35:28,723 - Knowledge - INFO - Worker kw6 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindNopoll.cmake
+2025-11-27 19:35:28,727 - Knowledge - INFO - Worker kw14 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/test/CMakeLists.txt
+2025-11-27 19:35:28,731 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsIarm.h (small file (2992 bytes))
+2025-11-27 19:35:28,732 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/test/CMakeLists.txt (ext=.txt, size=1658)
+2025-11-27 19:35:28,733 - Knowledge - INFO - Worker kw16 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/OCDM.h
+2025-11-27 19:35:28,735 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/logger.h (small file (2914 bytes))
+2025-11-27 19:35:28,736 - Knowledge - INFO - Worker kw19 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/LinearPlaybackControl.h
+2025-11-27 19:35:28,743 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/Module.cpp (ext=.cpp, size=765)
+2025-11-27 19:35:28,744 - Knowledge - INFO - Worker kw20 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/Dolby/DolbyOutput.cpp
+2025-11-27 19:35:28,745 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsLogging.h (ext=.h, size=1834)
+2025-11-27 19:35:28,745 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/README.md (ext=.md, size=4041)
+2025-11-27 19:35:28,752 - Knowledge - INFO - Worker kw7 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/Module.cpp
+2025-11-27 19:35:28,761 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/DemuxerStreamFsFCC.h (small file (2641 bytes))
+2025-11-27 19:35:28,762 - Knowledge - INFO - Worker kw3 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Response.h
+2025-11-27 19:35:28,771 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/test/CMakeLists.txt (ext=.txt, size=1782)
+2025-11-27 19:35:28,778 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_UtilsFile.cpp
+2025-11-27 19:35:28,780 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/IWebSocketClient.h (ext=.h, size=1478)
+2025-11-27 19:35:28,782 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindPlabels.cmake (ext=.cmake, size=1051)
+2025-11-27 19:35:28,782 - Knowledge - INFO - Worker kw17 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/DTVImpl.cpp
+2025-11-27 19:35:28,783 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Module.cpp (ext=.cpp, size=765)
+2025-11-27 19:35:28,788 - Knowledge - INFO - Worker kw1 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsSynchro.hpp
+2025-11-27 19:35:28,793 - Knowledge - INFO - Worker kw14 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/test/SAPThunderAPITest.cpp
+2025-11-27 19:35:28,804 - Knowledge - INFO - Worker kw17 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/DTV.h
+2025-11-27 19:35:28,806 - Knowledge - INFO - Worker kw11 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSDownloader.h
+2025-11-27 19:35:28,806 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/test/SAPThunderAPITest.cpp (ext=.cpp, size=15532)
+2025-11-27 19:35:28,820 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSDownloader.h (ext=.h, size=1483)
+2025-11-27 19:35:28,822 - Knowledge - INFO - Worker kw13 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/Module.cpp
+2025-11-27 19:35:28,840 - Knowledge - INFO - Worker kw1 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/tptimer.h
+2025-11-27 19:35:28,843 - Knowledge - INFO - Worker kw2 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/PingPong/PingPongEnabled.h
+2025-11-27 19:35:28,858 - Knowledge - INFO - Worker kw20 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/CMakeLists.txt
+2025-11-27 19:35:28,865 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/Module.cpp (ext=.cpp, size=779)
+2025-11-27 19:35:28,867 - Knowledge - INFO - Worker kw18 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/FileSelectListener.h
+2025-11-27 19:35:28,872 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Response.h (ext=.h, size=1276)
+2025-11-27 19:35:28,894 - Knowledge - INFO - Worker kw10 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/test/TTSThunderAPITest.cpp
+2025-11-27 19:35:28,899 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/test/TTSThunderAPITest.cpp (ext=.cpp, size=21055)
+2025-11-27 19:35:28,906 - Knowledge - INFO - Worker kw15 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/UnsecuredWebSocketClient.h
+2025-11-27 19:35:28,914 - Knowledge - INFO - Worker kw9 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindNXCLIENT.cmake
+2025-11-27 19:35:28,918 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindNopoll.cmake (ext=.cmake, size=1155)
+2025-11-27 19:35:28,919 - Knowledge - INFO - Worker kw6 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindGStreamer.cmake
+2025-11-27 19:35:28,925 - Knowledge - INFO - Worker kw8 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeech.h
+2025-11-27 19:35:28,927 - Knowledge - INFO - Worker kw14 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/test/Module.h
+2025-11-27 19:35:28,929 - Knowledge - INFO - Worker kw11 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSConfiguration.h
+2025-11-27 19:35:28,935 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/Module.cpp (ext=.cpp, size=765)
+2025-11-27 19:35:28,961 - Knowledge - INFO - Worker kw17 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/DTV.cpp
+2025-11-27 19:35:28,975 - Knowledge - INFO - Worker kw19 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/DemuxerStreamFsFCC.cpp
+2025-11-27 19:35:28,994 - Knowledge - INFO - Worker kw7 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/CryptographyRPC.cpp
+2025-11-27 19:35:29,004 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/CMakeLists.txt (ext=.txt, size=4006)
+2025-11-27 19:35:29,023 - Knowledge - INFO - Worker kw16 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/Module.cpp
+2025-11-27 19:35:29,029 - Knowledge - INFO - Worker kw1 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/cSettings.h
+2025-11-27 19:35:29,034 - Knowledge - INFO - Worker kw18 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/IDemuxer.h
+2025-11-27 19:35:29,101 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_TextToSpeech.cpp
+2025-11-27 19:35:29,122 - Knowledge - INFO - Worker kw10 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/test/Module.h
+2025-11-27 19:35:29,139 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/UnsecuredWebSocketClient.h (ext=.h, size=1265)
+2025-11-27 19:35:29,160 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindNXCLIENT.cmake (ext=.cmake, size=1813)
+2025-11-27 19:35:29,173 - Knowledge - INFO - Worker kw12 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/CHANGELOG.md
+2025-11-27 19:35:29,212 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindGStreamer.cmake (small file (2703 bytes))
+2025-11-27 19:35:29,215 - Knowledge - INFO - Worker kw13 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/SystemAudioPlayerJsonRpc.cpp
+2025-11-27 19:35:29,245 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/test/Module.h (ext=.h, size=839)
+2025-11-27 19:35:29,248 - Knowledge - INFO - Worker kw20 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/cmake/FindIARMBus.cmake
+2025-11-27 19:35:29,258 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/cmake/FindIARMBus.cmake (ext=.cmake, size=1735)
+2025-11-27 19:35:29,261 - Knowledge - INFO - Worker kw8 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/logger.cpp
+2025-11-27 19:35:29,266 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/IDemuxer.h (ext=.h, size=1961)
+2025-11-27 19:35:29,275 - Knowledge - INFO - Worker kw11 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSManager.cpp
+2025-11-27 19:35:29,275 - Knowledge - INFO - Worker kw13 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/BufferQueue.h
+2025-11-27 19:35:29,276 - Knowledge - INFO - Worker kw7 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/CMakeLists.txt
+2025-11-27 19:35:29,304 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_SystemAudioPlayer.cpp
+2025-11-27 19:35:29,333 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/test/Module.h (ext=.h, size=839)
+2025-11-27 19:35:29,353 - Knowledge - INFO - Worker kw1 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsController.h
+2025-11-27 19:35:29,354 - Knowledge - INFO - Worker kw15 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/Helper.h
+2025-11-27 19:35:29,384 - Knowledge - INFO - Worker kw9 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindRDKStorageManager.cmake
+2025-11-27 19:35:29,384 - Knowledge - INFO - Worker kw19 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/DeviceSettings/PlatformImplementation.cpp
+2025-11-27 19:35:29,422 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindRDKStorageManager.cmake (ext=.cmake, size=983)
+2025-11-27 19:35:29,464 - Knowledge - INFO - Split /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/DTV.cpp (74472 bytes) into 3 chunks of ~32KB
+2025-11-27 19:35:29,468 - Knowledge - INFO - Worker kw14 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/CMakeLists.txt
+2025-11-27 19:35:29,475 - Knowledge - INFO - Worker kw20 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/cmake/FindDS.cmake
+2025-11-27 19:35:29,475 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/Module.cpp (ext=.cpp, size=780)
+2025-11-27 19:35:29,480 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/cmake/FindDS.cmake (ext=.cmake, size=1842)
+2025-11-27 19:35:29,480 - Knowledge - INFO - Worker kw20 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/cmake/FindGStreamer.cmake
+2025-11-27 19:35:29,482 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/BufferQueue.h (ext=.h, size=1457)
+2025-11-27 19:35:29,484 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/CMakeLists.txt (ext=.txt, size=2239)
+2025-11-27 19:35:29,497 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/cmake/FindGStreamer.cmake (small file (2703 bytes))
+2025-11-27 19:35:29,500 - Knowledge - INFO - Worker kw10 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/CMakeLists.txt
+2025-11-27 19:35:29,538 - Knowledge - INFO - Worker kw6 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindAamp.cmake
+2025-11-27 19:35:29,538 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/CHANGELOG.md (ext=.md, size=1015)
+2025-11-27 19:35:29,539 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/CMakeLists.txt (ext=.txt, size=4445)
+2025-11-27 19:35:29,563 - Knowledge - INFO - Worker kw16 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/CENCParser.cpp
+2025-11-27 19:35:29,572 - Knowledge - INFO - Worker kw13 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/SecuredWebSocketClient.cpp
+2025-11-27 19:35:29,584 - Knowledge - INFO - Worker kw18 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/Module.cpp
+2025-11-27 19:35:29,597 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_LinearPlaybackControl.cpp
+2025-11-27 19:35:29,602 - Knowledge - INFO - Worker kw20 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/PlayerInfo.cpp
+2025-11-27 19:35:29,607 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/CMakeLists.txt (ext=.txt, size=3879)
+2025-11-27 19:35:29,619 - Knowledge - INFO - Worker kw12 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/README.md
+2025-11-27 19:35:29,624 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/README.md (ext=.md, size=496)
+2025-11-27 19:35:29,630 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/CENCParser.cpp (ext=.cpp, size=1677)
+2025-11-27 19:35:29,631 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/SecuredWebSocketClient.cpp (ext=.cpp, size=1589)
+2025-11-27 19:35:29,638 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_UnifiedCASManagement.cpp
+2025-11-27 19:35:29,647 - Knowledge - INFO - Worker kw15 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/AudioPlayer.h
+2025-11-27 19:35:29,666 - Knowledge - INFO - Worker kw11 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSDownloader.cpp
+2025-11-27 19:35:29,691 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindAamp.cmake (small file (2167 bytes))
+2025-11-27 19:35:29,709 - Knowledge - INFO - Worker kw10 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/Module.h
+2025-11-27 19:35:29,718 - Knowledge - INFO - Worker kw19 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/Module.cpp
+2025-11-27 19:35:29,731 - Knowledge - INFO - Worker kw8 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/SatToken.h
+2025-11-27 19:35:29,744 - Knowledge - INFO - Worker kw14 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/SystemAudioPlayerImplementation.h
+2025-11-27 19:35:29,763 - Knowledge - INFO - Worker kw1 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsisValidInt.h
+2025-11-27 19:35:29,764 - Knowledge - INFO - Worker kw16 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/FrameworkRPC.cpp
+2025-11-27 19:35:29,771 - Knowledge - INFO - Worker kw20 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/Module.h
+2025-11-27 19:35:29,791 - Knowledge - INFO - Worker kw17 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/Module.cpp
+2025-11-27 19:35:29,811 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/Module.cpp (ext=.cpp, size=781)
+2025-11-27 19:35:29,828 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/tests/test_PlayerInfo.cpp
+2025-11-27 19:35:29,876 - Knowledge - INFO - Worker kw14 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/SystemAudioPlayerImplementation.cpp
+2025-11-27 19:35:29,902 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/Module.h (ext=.h, size=870)
+2025-11-27 19:35:29,917 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/Module.cpp (ext=.cpp, size=781)
+2025-11-27 19:35:29,918 - Knowledge - INFO - Worker kw19 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/GStreamer/PlatformImplementation.cpp
+2025-11-27 19:35:29,941 - Knowledge - INFO - Worker kw12 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/CMakeLists.txt
+2025-11-27 19:35:29,942 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsisValidInt.h (ext=.h, size=1601)
+2025-11-27 19:35:29,951 - Knowledge - INFO - Worker kw1 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsProcess.h
+2025-11-27 19:35:29,952 - Knowledge - INFO - Worker kw15 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/logger.h
+2025-11-27 19:35:29,967 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsProcess.h (small file (2699 bytes))
+2025-11-27 19:35:29,987 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/Module.cpp (ext=.cpp, size=780)
+2025-11-27 19:35:29,989 - Knowledge - INFO - Worker kw11 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSCommon.h
+2025-11-27 19:35:29,996 - Knowledge - INFO - Worker kw18 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/LinearPlaybackControl.cpp
+2025-11-27 19:35:30,003 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L1Tests/CMakeLists.txt
+2025-11-27 19:35:30,031 - Knowledge - INFO - Worker kw10 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeechJsonRpc.cpp
+2025-11-27 19:35:30,032 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/SatToken.h (ext=.h, size=1544)
+2025-11-27 19:35:30,033 - Knowledge - INFO - Worker kw8 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/SatToken.cpp
+2025-11-27 19:35:30,039 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/Module.h (ext=.h, size=862)
+2025-11-27 19:35:30,050 - Knowledge - INFO - Worker kw17 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/DTVImpl.h
+2025-11-27 19:35:30,052 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/logger.h (small file (2924 bytes))
+2025-11-27 19:35:30,082 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSCommon.h (small file (2102 bytes))
+2025-11-27 19:35:30,083 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/Module.cpp
+2025-11-27 19:35:30,089 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/LinearPlaybackControl.cpp (small file (2776 bytes))
+2025-11-27 19:35:30,096 - Knowledge - INFO - Worker kw14 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/Module.h
+2025-11-27 19:35:30,118 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/CMakeLists.txt (ext=.txt, size=3351)
+2025-11-27 19:35:30,121 - Knowledge - INFO - Worker kw16 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/CHANGELOG.md
+2025-11-27 19:35:30,127 - Knowledge - INFO - Worker kw20 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/CONTRIBUTING.md
+2025-11-27 19:35:30,148 - Knowledge - INFO - Worker kw15 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/SecuredWebSocketClient.h
+2025-11-27 19:35:30,159 - Knowledge - INFO - Worker kw19 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/CHANGELOG.md
+2025-11-27 19:35:30,165 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/doc/UnifiedCASManagementService.md
+2025-11-27 19:35:30,178 - Knowledge - INFO - Worker kw18 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/LinearConfig.cpp
+2025-11-27 19:35:30,181 - Knowledge - INFO - Split /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/DTVImpl.h (88643 bytes) into 3 chunks of ~32KB
+2025-11-27 19:35:30,188 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/Module.h (ext=.h, size=875)
+2025-11-27 19:35:30,193 - Knowledge - INFO - Worker kw12 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/cmake/FindLibDRM.cmake
+2025-11-27 19:35:30,203 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/CHANGELOG.md (ext=.md, size=1015)
+2025-11-27 19:35:30,226 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/CONTRIBUTING.md (ext=.md, size=267)
+2025-11-27 19:35:30,244 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/SecuredWebSocketClient.h (ext=.h, size=1369)
+2025-11-27 19:35:30,247 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/CHANGELOG.md (ext=.md, size=1015)
+2025-11-27 19:35:30,266 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/LinearConfig.cpp (ext=.cpp, size=744)
+2025-11-27 19:35:30,279 - Knowledge - INFO - Worker kw17 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/CHANGELOG.md
+2025-11-27 19:35:30,304 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/cmake/FindLibDRM.cmake (small file (2059 bytes))
+2025-11-27 19:35:30,310 - Knowledge - INFO - Worker kw16 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/CENCParser.h
+2025-11-27 19:35:30,331 - Knowledge - INFO - Worker kw19 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/PlayerInfo.h
+2025-11-27 19:35:30,348 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/CHANGELOG.md (ext=.md, size=1015)
+2025-11-27 19:35:30,358 - Knowledge - INFO - Worker kw18 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/CMakeLists.txt
+2025-11-27 19:35:30,371 - Knowledge - INFO - Worker kw17 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/CMakeLists.txt
+2025-11-27 19:35:30,382 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/CMakeLists.txt (ext=.txt, size=2341)
+2025-11-27 19:35:30,387 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/CMakeLists.txt (ext=.txt, size=3200)
+2025-11-27 19:35:30,389 - Knowledge - INFO - Worker kw18 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/LinearPlaybackControlJsonRpc.cpp
+2025-11-27 19:35:30,392 - Knowledge - INFO - Worker kw17 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/cmake/FindDTVKit.cmake
+2025-11-27 19:35:30,399 - Knowledge - INFO - Worker kw19 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/Dolby/include/Dolby.h
+2025-11-27 19:35:30,406 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/cmake/FindDTVKit.cmake (ext=.cmake, size=1688)
+2025-11-27 19:35:30,420 - Knowledge - INFO - Worker kw16 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/CMakeLists.txt
+2025-11-27 19:35:30,423 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/Dolby/include/Dolby.h (ext=.h, size=1777)
+2025-11-27 19:35:30,490 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/CMakeLists.txt (ext=.txt, size=3489)
+2025-11-27 19:35:30,500 - Knowledge - INFO - Worker kw16 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/OCDMJsonRpc.cpp
+2025-11-27 19:35:30,518 - Knowledge - INFO - Worker kw19 processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/Dolby/CMakeLists.txt
+2025-11-27 19:35:30,568 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/Dolby/CMakeLists.txt (ext=.txt, size=2103)
+2025-11-27 19:35:30,574 - Knowledge - INFO - Fast-tracked /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/OCDMJsonRpc.cpp (small file (2981 bytes))
+2025-11-27 19:35:31,359 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 290, Duration: 0ms
+2025-11-27 19:35:31,363 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 4ms
+2025-11-27 19:35:31,366 - Knowledge - INFO - Progress: 5.3% | Files: 12/226 | Rate: 2.38 files/sec | Queue: 0
+2025-11-27 19:35:44,831 - Knowledge - INFO - [LLM_CALL] Completed: FindGLIB.cmake:chunk1, Duration: 16935ms, PromptTokens: 3714, CompletionTokens: 59, Cost: $0.00039
+2025-11-27 19:35:44,832 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindGLIB.cmake
+2025-11-27 19:35:44,901 - Knowledge - INFO - Processing batch of 12 files
+2025-11-27 19:35:44,918 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindIARMBus.cmake
+2025-11-27 19:35:44,918 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindCEC.cmake
+2025-11-27 19:35:44,919 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindGLIB.cmake
+2025-11-27 19:35:44,919 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindNEXUS.cmake
+2025-11-27 19:35:44,920 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindLMPLAYER.cmake
+2025-11-27 19:35:44,920 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindCTRLM.cmake
+2025-11-27 19:35:44,920 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindDS.cmake
+2025-11-27 19:35:44,930 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindDL.cmake
+2025-11-27 19:35:44,954 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/Findjsoncpp.cmake
+2025-11-27 19:35:44,958 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindNopoll.cmake
+2025-11-27 19:35:44,967 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindGStreamer.cmake
+2025-11-27 19:35:44,980 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindAamp.cmake
+2025-11-27 19:35:46,814 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 287, Duration: 0ms
+2025-11-27 19:35:46,848 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 34ms
+2025-11-27 19:35:46,856 - Knowledge - INFO - Progress: 10.6% | Files: 24/226 | Rate: 1.17 files/sec | Queue: 0
+2025-11-27 19:35:58,909 - Knowledge - INFO - [LLM_CALL] Completed: SingleClientServer.h:chunk1, Duration: 30764ms, PromptTokens: 2168, CompletionTokens: 338, Cost: $0.00035
+2025-11-27 19:35:58,913 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/Roles/SingleClientServer.h
+2025-11-27 19:36:01,156 - Knowledge - INFO - [LLM_CALL] Completed: services.cmake:chunk1, Duration: 32448ms, PromptTokens: 3232, CompletionTokens: 301, Cost: $0.00044
+2025-11-27 19:36:01,157 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/services.cmake
+2025-11-27 19:36:06,147 - Knowledge - INFO - [LLM_CALL] Completed: UtilsSynchroIarm.hpp:chunk1, Duration: 37975ms, PromptTokens: 2546, CompletionTokens: 389, Cost: $0.00041
+2025-11-27 19:36:06,152 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsSynchroIarm.hpp
+2025-11-27 19:36:08,544 - Knowledge - INFO - [LLM_CALL] Completed: logger.cpp:chunk1, Duration: 38953ms, PromptTokens: 3102, CompletionTokens: 421, Cost: $0.00048
+2025-11-27 19:36:08,550 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/logger.cpp
+2025-11-27 19:36:08,605 - Knowledge - INFO - [LLM_CALL] Completed: LibMediaPlayerImpl.cpp:chunk1, Duration: 40389ms, PromptTokens: 4166, CompletionTokens: 463, Cost: $0.00060
+2025-11-27 19:36:08,622 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/LibMediaPlayerImpl.cpp
+2025-11-27 19:36:09,687 - Knowledge - INFO - [LLM_CALL] Completed: CryptographyExtAccess.h:chunk1, Duration: 41809ms, PromptTokens: 2072, CompletionTokens: 424, Cost: $0.00038
+2025-11-27 19:36:09,689 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/CryptographyExtAccess.h
+2025-11-27 19:36:09,890 - Knowledge - INFO - Processing batch of 12 files
+2025-11-27 19:36:09,893 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/CryptographyExtAccess.h
+2025-11-27 19:36:09,901 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/Module.h
+2025-11-27 19:36:09,923 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/CHANGELOG.md
+2025-11-27 19:36:09,928 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/README.md
+2025-11-27 19:36:09,950 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/CMakeLists.txt
+2025-11-27 19:36:09,966 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindAC.cmake
+2025-11-27 19:36:09,978 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindBCM_HOST.cmake
+2025-11-27 19:36:09,981 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindSqlite.cmake
+2025-11-27 19:36:09,997 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindCurl.cmake
+2025-11-27 19:36:09,999 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindPlabels.cmake
+2025-11-27 19:36:10,016 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindNXCLIENT.cmake
+2025-11-27 19:36:10,034 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindRDKStorageManager.cmake
+2025-11-27 19:36:10,324 - Knowledge - INFO - [LLM_CALL] Completed: DolbyOutput.cpp:chunk1, Duration: 41481ms, PromptTokens: 2170, CompletionTokens: 449, Cost: $0.00040
+2025-11-27 19:36:10,327 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/Dolby/DolbyOutput.cpp
+2025-11-27 19:36:10,977 - Knowledge - INFO - [LLM_CALL] Completed: FileSelectListener.h:chunk1, Duration: 41948ms, PromptTokens: 2476, CompletionTokens: 449, Cost: $0.00043
+2025-11-27 19:36:10,993 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/FileSelectListener.h
+2025-11-27 19:36:11,746 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 290, Duration: 0ms
+2025-11-27 19:36:11,750 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 3ms
+2025-11-27 19:36:11,755 - Knowledge - INFO - Progress: 15.9% | Files: 36/226 | Rate: 0.79 files/sec | Queue: 0
+2025-11-27 19:36:12,200 - Knowledge - INFO - [LLM_CALL] Completed: ScreenCapture.cpp:chunk1, Duration: 44110ms, PromptTokens: 3134, CompletionTokens: 491, Cost: $0.00051
+2025-11-27 19:36:12,202 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/ScreenCapture.cpp
+2025-11-27 19:36:13,735 - Knowledge - INFO - [LLM_CALL] Completed: drmsc.cpp:chunk1, Duration: 45423ms, PromptTokens: 4202, CompletionTokens: 494, Cost: $0.00062
+2025-11-27 19:36:13,738 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Implementation/drm/drmsc.cpp
+2025-11-27 19:36:16,817 - Knowledge - INFO - [LLM_CALL] Completed: LinearPlaybackControl.h:chunk1, Duration: 47872ms, PromptTokens: 3190, CompletionTokens: 537, Cost: $0.00053
+2025-11-27 19:36:16,823 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/LinearPlaybackControl.h
+2025-11-27 19:36:17,690 - Knowledge - INFO - [LLM_CALL] Completed: TextToSpeech.cpp:chunk1, Duration: 49174ms, PromptTokens: 2788, CompletionTokens: 560, Cost: $0.00050
+2025-11-27 19:36:17,690 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeech.cpp
+2025-11-27 19:36:18,460 - Knowledge - INFO - [LLM_CALL] Completed: NetworkStatusObserver.cpp:chunk1, Duration: 50343ms, PromptTokens: 3068, CompletionTokens: 569, Cost: $0.00053
+2025-11-27 19:36:18,463 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/NetworkStatusObserver.cpp
+2025-11-27 19:36:24,904 - Knowledge - INFO - [LLM_CALL] Completed: PingPongEnabled.h:chunk1, Duration: 56044ms, PromptTokens: 3080, CompletionTokens: 634, Cost: $0.00056
+2025-11-27 19:36:24,905 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/PingPong/PingPongEnabled.h
+2025-11-27 19:36:26,062 - Knowledge - INFO - [LLM_CALL] Completed: TlsEnabled.h:chunk1, Duration: 58209ms, PromptTokens: 4510, CompletionTokens: 627, Cost: $0.00070
+2025-11-27 19:36:26,063 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/Encryption/TlsEnabled.h
+2025-11-27 19:36:26,475 - Knowledge - INFO - Processing batch of 12 files
+2025-11-27 19:36:26,475 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Request.cpp
+2025-11-27 19:36:26,494 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Request.h
+2025-11-27 19:36:26,527 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Response.cpp
+2025-11-27 19:36:26,541 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/Encryption/TlsEnabled.h
+2025-11-27 19:36:26,549 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/Encryption/NoEncryption.h
+2025-11-27 19:36:26,570 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/tests/LinearPlaybackControl_L2Test.cpp
+2025-11-27 19:36:26,598 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/tests/TextToSpeech_L2test.cpp
+2025-11-27 19:36:26,626 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/tests/UnifiedCASManagement_L2Test.cpp
+2025-11-27 19:36:26,642 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/tests/PlayerInfo_L2Test.cpp
+2025-11-27 19:36:26,669 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/tests/ScreenCapture_L2Test.cpp
+2025-11-27 19:36:26,700 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/L2Tests/CMakeLists.txt
+2025-11-27 19:36:26,712 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Tests/README.md
+2025-11-27 19:36:28,028 - Knowledge - INFO - [LLM_CALL] Completed: TTSSpeaker.h:chunk1, Duration: 59728ms, PromptTokens: 3698, CompletionTokens: 662, Cost: $0.00063
+2025-11-27 19:36:28,036 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSSpeaker.h
+2025-11-27 19:36:29,082 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 290, Duration: 0ms
+2025-11-27 19:36:29,087 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 5ms
+2025-11-27 19:36:29,087 - Knowledge - INFO - Progress: 21.2% | Files: 48/226 | Rate: 0.76 files/sec | Queue: 0
+2025-11-27 19:36:34,101 - Knowledge - INFO - [LLM_CALL] Completed: OCDM.cpp:chunk1, Duration: 65558ms, PromptTokens: 4982, CompletionTokens: 756, Cost: $0.00080
+2025-11-27 19:36:34,101 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/OCDM.cpp
+2025-11-27 19:36:36,915 - Knowledge - INFO - [LLM_CALL] Completed: LibMediaPlayerImpl.h:chunk1, Duration: 68800ms, PromptTokens: 2504, CompletionTokens: 379, Cost: $0.00040
+2025-11-27 19:36:36,915 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/LibMediaPlayerImpl.h
+2025-11-27 19:36:44,002 - Knowledge - INFO - [LLM_CALL] Completed: Helper.h:chunk1, Duration: 74419ms, PromptTokens: 2388, CompletionTokens: 471, Cost: $0.00043
+2025-11-27 19:36:44,008 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/Helper.h
+2025-11-27 19:36:45,307 - Knowledge - INFO - [LLM_CALL] Completed: ScreenCapture.h:chunk1, Duration: 77165ms, PromptTokens: 2348, CompletionTokens: 418, Cost: $0.00040
+2025-11-27 19:36:45,312 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/ScreenCapture.h
+2025-11-27 19:36:50,332 - Knowledge - INFO - [LLM_CALL] Completed: SystemAudioPlayer.h:chunk1, Duration: 81808ms, PromptTokens: 2888, CompletionTokens: 681, Cost: $0.00056
+2025-11-27 19:36:50,333 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/SystemAudioPlayer.h
+2025-11-27 19:36:50,475 - Knowledge - INFO - [LLM_CALL] Completed: ScreenCaptureImplementation.h:chunk1, Duration: 82326ms, PromptTokens: 3066, CompletionTokens: 524, Cost: $0.00052
+2025-11-27 19:36:50,476 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/ScreenCaptureImplementation.h
+2025-11-27 19:36:55,390 - Knowledge - INFO - [LLM_CALL] Completed: build_dependencies.sh:chunk1, Duration: 86825ms, PromptTokens: 3830, CompletionTokens: 59, Cost: $0.00041
+2025-11-27 19:36:55,391 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/build_dependencies.sh
+2025-11-27 19:36:55,510 - Knowledge - INFO - [LLM_CALL] Completed: JsonRpcInterface.h:chunk1, Duration: 87447ms, PromptTokens: 4596, CompletionTokens: 791, Cost: $0.00078
+2025-11-27 19:36:55,511 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/CommunicationInterface/JsonRpcInterface.h
+2025-11-27 19:36:59,438 - Knowledge - INFO - [LLM_CALL] Completed: PlatformImplementation.cpp:chunk1, Duration: 89365ms, PromptTokens: 4824, CompletionTokens: 581, Cost: $0.00071
+2025-11-27 19:36:59,448 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/GStreamer/PlatformImplementation.cpp
+2025-11-27 19:37:03,125 - Knowledge - INFO - [LLM_CALL] Completed: TTSURLConstructer.cpp:chunk1, Duration: 94681ms, PromptTokens: 5192, CompletionTokens: 617, Cost: $0.00077
+2025-11-27 19:37:03,126 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSURLConstructer.cpp
+2025-11-27 19:37:04,094 - Knowledge - INFO - [LLM_CALL] Completed: UnifiedCASManagement.cpp:chunk1, Duration: 95452ms, PromptTokens: 3890, CompletionTokens: 396, Cost: $0.00055
+2025-11-27 19:37:04,095 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/UnifiedCASManagement.cpp
+2025-11-27 19:37:12,955 - Knowledge - INFO - [LLM_CALL] Completed: LinearPlaybackControlJsonRpc.cpp:chunk1, Duration: 102515ms, PromptTokens: 6324, CompletionTokens: 886, Cost: $0.00099
+2025-11-27 19:37:12,955 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/LinearPlaybackControlJsonRpc.cpp
+2025-11-27 19:37:14,094 - Knowledge - INFO - Processing batch of 10 files
+2025-11-27 19:37:14,097 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/Module.h
+2025-11-27 19:37:14,114 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/LinearConfig.h
+2025-11-27 19:37:14,137 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/DemuxerStreamFsFCC.h
+2025-11-27 19:37:14,203 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/FileSelectListener.h
+2025-11-27 19:37:14,245 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/IDemuxer.h
+2025-11-27 19:37:14,304 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/Module.cpp
+2025-11-27 19:37:14,328 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/LinearPlaybackControl.cpp
+2025-11-27 19:37:14,351 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/LinearConfig.cpp
+2025-11-27 19:37:14,363 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/CMakeLists.txt
+2025-11-27 19:37:14,403 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/LinearPlaybackControlJsonRpc.cpp
+2025-11-27 19:37:15,727 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 288, Duration: 0ms
+2025-11-27 19:37:15,737 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 9ms
+2025-11-27 19:37:15,738 - Knowledge - INFO - Progress: 25.7% | Files: 58/226 | Rate: 0.53 files/sec | Queue: 0
+2025-11-27 19:37:18,908 - Knowledge - INFO - [LLM_CALL] Completed: frontpanel.h:chunk1, Duration: 110356ms, PromptTokens: 2530, CompletionTokens: 1033, Cost: $0.00067
+2025-11-27 19:37:18,911 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/frontpanel.h
+2025-11-27 19:37:18,914 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/cSettings.h after 90s
+2025-11-27 19:37:18,924 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsController.h after 90s
+2025-11-27 19:37:18,925 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsSynchro.hpp after 90s
+2025-11-27 19:37:18,930 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/tptimer.h after 90s
+2025-11-27 19:37:18,934 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsString.h after 90s
+2025-11-27 19:37:18,937 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cov_build.sh after 90s
+2025-11-27 19:37:18,938 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cov_build.sh not successfully processed
+2025-11-27 19:37:18,964 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsString.h not successfully processed
+2025-11-27 19:37:19,399 - Knowledge - INFO - [LLM_CALL] Completed: AudioPlayer.h:chunk1, Duration: 109502ms, PromptTokens: 3106, CompletionTokens: 518, Cost: $0.00052
+2025-11-27 19:37:19,400 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/AudioPlayer.h
+2025-11-27 19:37:19,487 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsSynchro.hpp not successfully processed
+2025-11-27 19:37:19,505 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/tptimer.h not successfully processed
+2025-11-27 19:37:19,532 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/cSettings.h not successfully processed
+2025-11-27 19:37:19,532 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsController.h not successfully processed
+2025-11-27 19:37:19,720 - Knowledge - INFO - Processing batch of 9 files
+2025-11-27 19:37:19,723 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsLOG_MILESTONE.h
+2025-11-27 19:37:19,766 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsUnused.h
+2025-11-27 19:37:19,778 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsFile.h
+2025-11-27 19:37:19,822 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsSynchroIarm.hpp
+2025-11-27 19:37:19,876 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsfileExists.h
+2025-11-27 19:37:19,906 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/frontpanel.h
+2025-11-27 19:37:19,950 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsIarm.h
+2025-11-27 19:37:19,976 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsisValidInt.h
+2025-11-27 19:37:20,028 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsProcess.h
+2025-11-27 19:37:20,420 - Knowledge - INFO - Processing batch of 10 files
+2025-11-27 19:37:20,421 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/SecurityParameters.h
+2025-11-27 19:37:20,517 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/logger.cpp
+2025-11-27 19:37:20,794 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/UnsecuredWebSocketClient.cpp
+2025-11-27 19:37:20,837 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/BufferQueue.cpp
+2025-11-27 19:37:20,865 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/IWebSocketClient.h
+2025-11-27 19:37:20,879 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/UnsecuredWebSocketClient.h
+2025-11-27 19:37:20,902 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/Helper.h
+2025-11-27 19:37:20,986 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/AudioPlayer.h
+2025-11-27 19:37:21,011 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/logger.h
+2025-11-27 19:37:21,148 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/SecuredWebSocketClient.h
+2025-11-27 19:37:21,540 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 289, Duration: 0ms
+2025-11-27 19:37:21,546 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 6ms
+2025-11-27 19:37:21,550 - Knowledge - INFO - Progress: 34.1% | Files: 77/226 | Rate: 0.67 files/sec | Queue: 0
+2025-11-27 19:37:23,978 - Knowledge - INFO - [LLM_CALL] Completed: PlayerInfo.cpp:chunk1, Duration: 114209ms, PromptTokens: 6504, CompletionTokens: 1061, Cost: $0.00107
+2025-11-27 19:37:23,981 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/PlayerInfo.cpp
+2025-11-27 19:37:24,390 - Knowledge - INFO - Processing batch of 8 files
+2025-11-27 19:37:24,391 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/Dolby/DolbyOutput.cpp
+2025-11-27 19:37:24,403 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/CMakeLists.txt
+2025-11-27 19:37:24,502 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/cmake/FindIARMBus.cmake
+2025-11-27 19:37:24,530 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/cmake/FindDS.cmake
+2025-11-27 19:37:24,565 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/cmake/FindGStreamer.cmake
+2025-11-27 19:37:24,640 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/PlayerInfo.cpp
+2025-11-27 19:37:24,677 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/Module.h
+2025-11-27 19:37:24,732 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/CONTRIBUTING.md
+2025-11-27 19:37:25,919 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 289, Duration: 0ms
+2025-11-27 19:37:25,936 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 17ms
+2025-11-27 19:37:25,944 - Knowledge - INFO - Progress: 37.6% | Files: 85/226 | Rate: 0.71 files/sec | Queue: 0
+2025-11-27 19:37:29,415 - Knowledge - INFO - [LLM_CALL] Completed: OCDM.h:chunk1, Duration: 120467ms, PromptTokens: 3922, CompletionTokens: 614, Cost: $0.00064
+2025-11-27 19:37:29,416 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/OCDM.h
+2025-11-27 19:37:38,279 - Knowledge - INFO - [LLM_CALL] Completed: TextToSpeechImplementation.h:chunk1, Duration: 129884ms, PromptTokens: 3844, CompletionTokens: 1127, Cost: $0.00084
+2025-11-27 19:37:38,279 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeechImplementation.h
+2025-11-27 19:37:39,039 - Knowledge - INFO - [LLM_CALL] Completed: CryptographyExtAccess.cpp:chunk1, Duration: 130293ms, PromptTokens: 2256, CompletionTokens: 583, Cost: $0.00046
+2025-11-27 19:37:39,043 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/CryptographyExtAccess.cpp
+2025-11-27 19:37:39,045 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/CryptographyRPC.cpp after 90s
+2025-11-27 19:37:39,054 - Knowledge - INFO - [LLM_CALL] Completed: ScreenCaptureImplementation.cpp:chunk1, Duration: 130561ms, PromptTokens: 7480, CompletionTokens: 723, Cost: $0.00104
+2025-11-27 19:37:39,062 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/ScreenCaptureImplementation.cpp
+2025-11-27 19:37:39,063 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/SystemAudioPlayer.cpp after 90s
+2025-11-27 19:37:39,063 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/SystemAudioPlayerJsonRpc.cpp after 90s
+2025-11-27 19:37:39,375 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/SystemAudioPlayer.cpp not successfully processed
+2025-11-27 19:37:39,442 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/SystemAudioPlayerJsonRpc.cpp not successfully processed
+2025-11-27 19:37:40,077 - Knowledge - INFO - [LLM_CALL] Completed: kms.cpp:chunk1, Duration: 131389ms, PromptTokens: 3414, CompletionTokens: 891, Cost: $0.00070
+2025-11-27 19:37:40,080 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Implementation/drm/kms.cpp
+2025-11-27 19:37:40,082 - Knowledge - INFO - Processing batch of 8 files
+2025-11-27 19:37:40,082 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/ScreenCapture.cpp
+2025-11-27 19:37:40,106 - Knowledge - INFO - [LLM_CALL] Completed: frontpanel.cpp:chunk1, Duration: 131458ms, PromptTokens: 10958, CompletionTokens: 1188, Cost: $0.00157
+2025-11-27 19:37:40,109 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/frontpanel.cpp
+2025-11-27 19:37:40,113 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/ScreenCaptureImplementation.h
+2025-11-27 19:37:40,135 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Module.h
+2025-11-27 19:37:40,143 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/ScreenCaptureImplementation.cpp
+2025-11-27 19:37:40,160 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/build_dependencies.sh
+2025-11-27 19:37:40,223 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/Module.cpp
+2025-11-27 19:37:40,276 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/BufferQueue.h
+2025-11-27 19:37:40,289 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/SecuredWebSocketClient.cpp
+2025-11-27 19:37:40,322 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/CryptographyRPC.cpp not successfully processed
+2025-11-27 19:37:40,420 - Knowledge - INFO - Processing batch of 11 files
+2025-11-27 19:37:40,423 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/CHANGELOG.md
+2025-11-27 19:37:40,446 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/UnifiedCASManagement.h
+2025-11-27 19:37:40,542 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/LibMediaPlayerImpl.h
+2025-11-27 19:37:40,669 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/CMakeLists.txt
+2025-11-27 19:37:40,712 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/LibMediaPlayerImpl.cpp
+2025-11-27 19:37:40,810 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/MediaPlayer.h
+2025-11-27 19:37:40,820 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/Module.h
+2025-11-27 19:37:40,821 - Knowledge - INFO - Processing batch of 10 files
+2025-11-27 19:37:40,829 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/ScreenCapture.h
+2025-11-27 19:37:40,834 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/UnifiedCASManagement/UnifiedCASManagement.cpp
+2025-11-27 19:37:40,871 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Implementation/drm/drmsc.cpp
+2025-11-27 19:37:41,059 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/CryptographyExtAccess.cpp
+2025-11-27 19:37:41,065 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Implementation/drm/kms.h
+2025-11-27 19:37:41,074 - Knowledge - INFO - [LLM_CALL] Completed: DemuxerStreamFsFCC.cpp:chunk1, Duration: 131783ms, PromptTokens: 3924, CompletionTokens: 696, Cost: $0.00067
+2025-11-27 19:37:41,075 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/DemuxerStreamFsFCC.cpp
+2025-11-27 19:37:41,096 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Implementation/drm/drmsc.h
+2025-11-27 19:37:41,104 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/Module.cpp
+2025-11-27 19:37:41,195 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Implementation/drm/kms.cpp
+2025-11-27 19:37:41,206 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/Cryptography/CMakeLists.txt
+2025-11-27 19:37:41,297 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/Module.cpp
+2025-11-27 19:37:41,328 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 290, Duration: 0ms
+2025-11-27 19:37:41,333 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/CHANGELOG.md
+2025-11-27 19:37:41,338 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 9ms
+2025-11-27 19:37:41,341 - Knowledge - INFO - Progress: 50.4% | Files: 114/226 | Rate: 0.84 files/sec | Queue: 0
+2025-11-27 19:37:41,558 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/README.md
+2025-11-27 19:37:41,757 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/CMakeLists.txt
+2025-11-27 19:37:41,895 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/ScreenCapture/cmake/FindLibDRM.cmake
+2025-11-27 19:37:46,003 - Knowledge - INFO - [LLM_CALL] Completed: TTSSpeaker.cpp:chunk1, Duration: 137784ms, PromptTokens: 19030, CompletionTokens: 796, Cost: $0.00222
+2025-11-27 19:37:46,007 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSSpeaker.cpp
+2025-11-27 19:37:47,075 - Knowledge - INFO - [LLM_CALL] Completed: DTV.h:chunk1, Duration: 138147ms, PromptTokens: 6730, CompletionTokens: 1271, Cost: $0.00118
+2025-11-27 19:37:47,080 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/DTV.h
+2025-11-27 19:37:49,249 - Knowledge - ERROR - Exception processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/PlayerInfo.h, chunk 1: litellm.APIConnectionError: APIConnectionError: OpenAIException - peer closed connection without sending complete message body (incomplete chunked read)
+2025-11-27 19:37:49,255 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/PlayerInfo.h
+2025-11-27 19:37:50,568 - Knowledge - INFO - [LLM_CALL] Completed: WSEndpoint.cpp:chunk1, Duration: 142757ms, PromptTokens: 5238, CompletionTokens: 1080, Cost: $0.00096
+2025-11-27 19:37:50,569 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/WSEndpoint.cpp
+2025-11-27 19:37:51,429 - Knowledge - INFO - Processing batch of 12 files
+2025-11-27 19:37:51,429 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/PingPong/PingPongDisabled.h
+2025-11-27 19:37:51,486 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/WSEndpoint.h
+2025-11-27 19:37:51,518 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/WSEndpoint.cpp
+2025-11-27 19:37:51,554 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/ConnectionInitializationResult.h
+2025-11-27 19:37:51,564 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/CommunicationInterface/CommandInterface.h
+2025-11-27 19:37:51,601 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/CommunicationInterface/BinaryInterface.h
+2025-11-27 19:37:51,742 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/CommunicationInterface/JsonRpcInterface.h
+2025-11-27 19:37:51,782 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/Roles/SingleClientServer.h
+2025-11-27 19:37:51,813 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/Roles/Client.h
+2025-11-27 19:37:51,870 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Notification.h
+2025-11-27 19:37:52,198 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Notification.cpp
+2025-11-27 19:37:52,287 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/JsonRpc/Response.h
+2025-11-27 19:37:52,553 - Knowledge - INFO - [LLM_CALL] Completed: AudioPlayer.cpp:chunk1, Duration: 144213ms, PromptTokens: 17182, CompletionTokens: 2234, Cost: $0.00261
+2025-11-27 19:37:52,554 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/AudioPlayer.cpp
+2025-11-27 19:37:54,908 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 290, Duration: 0ms
+2025-11-27 19:37:54,913 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 5ms
+2025-11-27 19:37:54,913 - Knowledge - INFO - Progress: 55.8% | Files: 126/226 | Rate: 0.85 files/sec | Queue: 0
+2025-11-27 19:38:00,897 - Knowledge - INFO - [LLM_CALL] Completed: UtilsgetFileContent.h:chunk1, Duration: 152912ms, PromptTokens: 5220, CompletionTokens: 593, Cost: $0.00076
+2025-11-27 19:38:00,900 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsgetFileContent.h
+2025-11-27 19:38:02,603 - Knowledge - INFO - [LLM_CALL] Completed: TextToSpeechImplementation.cpp:chunk1, Duration: 154205ms, PromptTokens: 14692, CompletionTokens: 1932, Cost: $0.00224
+2025-11-27 19:38:02,603 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeechImplementation.cpp
+2025-11-27 19:38:02,631 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeech.h after 90s
+2025-11-27 19:38:02,632 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/logger.cpp after 90s
+2025-11-27 19:38:02,632 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/SatToken.cpp after 90s
+2025-11-27 19:38:03,727 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeech.h not successfully processed
+2025-11-27 19:38:03,731 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/logger.cpp not successfully processed
+2025-11-27 19:38:03,839 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/SatToken.cpp not successfully processed
+2025-11-27 19:38:03,845 - Knowledge - INFO - Processing batch of 9 files
+2025-11-27 19:38:03,846 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindGStreamerVideo.cmake
+2025-11-27 19:38:03,867 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindUdev.cmake
+2025-11-27 19:38:03,918 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindSqliteSee.cmake
+2025-11-27 19:38:04,008 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindTTS.cmake
+2025-11-27 19:38:04,052 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/cmake/FindLibSoup.cmake
+2025-11-27 19:38:04,103 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeechImplementation.cpp
+2025-11-27 19:38:04,207 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeech.cpp
+2025-11-27 19:38:04,246 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/Module.cpp
+2025-11-27 19:38:04,272 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/SatToken.h
+2025-11-27 19:38:05,525 - Knowledge - INFO - [LLM_CALL] Completed: CENCParser.h:chunk1, Duration: 155119ms, PromptTokens: 10112, CompletionTokens: 920, Cost: $0.00138
+2025-11-27 19:38:05,532 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/CENCParser.h
+2025-11-27 19:38:06,422 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 292, Duration: 0ms
+2025-11-27 19:38:06,424 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 2ms
+2025-11-27 19:38:06,432 - Knowledge - INFO - Progress: 59.7% | Files: 135/226 | Rate: 0.84 files/sec | Queue: 0
+2025-11-27 19:38:10,883 - Knowledge - INFO - [LLM_CALL] Completed: TTSManager.h:chunk1, Duration: 162743ms, PromptTokens: 3080, CompletionTokens: 871, Cost: $0.00066
+2025-11-27 19:38:10,885 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSManager.h
+2025-11-27 19:38:13,195 - Knowledge - INFO - [LLM_CALL] Completed: RFCURLObserver.cpp:chunk1, Duration: 164650ms, PromptTokens: 3370, CompletionTokens: 721, Cost: $0.00063
+2025-11-27 19:38:13,196 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/RFCURLObserver.cpp
+2025-11-27 19:38:16,932 - Knowledge - INFO - [LLM_CALL] Completed: WebSocketClientImpl.h:chunk1, Duration: 168484ms, PromptTokens: 3138, CompletionTokens: 622, Cost: $0.00056
+2025-11-27 19:38:16,937 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/WebSocketClientImpl.h
+2025-11-27 19:38:16,937 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/SystemAudioPlayerImplementation.h after 90s
+2025-11-27 19:38:16,943 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/SystemAudioPlayerImplementation.cpp after 90s
+2025-11-27 19:38:17,748 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/SystemAudioPlayerImplementation.h not successfully processed
+2025-11-27 19:38:17,753 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/SystemAudioPlayerImplementation.cpp not successfully processed
+2025-11-27 19:38:17,924 - Knowledge - INFO - Processing batch of 8 files
+2025-11-27 19:38:17,926 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/AudioPlayer.cpp
+2025-11-27 19:38:18,085 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/impl/WebSocketClientImpl.h
+2025-11-27 19:38:18,102 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/CHANGELOG.md
+2025-11-27 19:38:18,163 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/test/CMakeLists.txt
+2025-11-27 19:38:18,221 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/test/SAPThunderAPITest.cpp
+2025-11-27 19:38:18,277 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/test/Module.h
+2025-11-27 19:38:18,624 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/CMakeLists.txt
+2025-11-27 19:38:18,998 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/Module.h
+2025-11-27 19:38:21,589 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 291, Duration: 0ms
+2025-11-27 19:38:21,609 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 20ms
+2025-11-27 19:38:21,610 - Knowledge - INFO - Progress: 63.3% | Files: 143/226 | Rate: 0.82 files/sec | Queue: 0
+2025-11-27 19:38:21,995 - Knowledge - INFO - [LLM_CALL] Completed: UtilsInputValidator.h:chunk1, Duration: 174192ms, PromptTokens: 4904, CompletionTokens: 512, Cost: $0.00070
+2025-11-27 19:38:22,008 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsInputValidator.h
+2025-11-27 19:38:22,599 - Knowledge - INFO - [LLM_CALL] Completed: TextToSpeechValidator.h:chunk1, Duration: 173931ms, PromptTokens: 3666, CompletionTokens: 290, Cost: $0.00048
+2025-11-27 19:38:22,600 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeechValidator.h
+2025-11-27 19:38:22,606 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeechJsonRpc.cpp after 90s
+2025-11-27 19:38:23,598 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeechJsonRpc.cpp not successfully processed
+2025-11-27 19:38:23,600 - Knowledge - INFO - Processing batch of 11 files
+2025-11-27 19:38:23,601 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/RFCURLObserver.h
+2025-11-27 19:38:23,768 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSManager.h
+2025-11-27 19:38:24,043 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSSpeaker.h
+2025-11-27 19:38:24,142 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeechImplementation.h
+2025-11-27 19:38:24,269 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/CHANGELOG.md
+2025-11-27 19:38:24,329 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/TextToSpeechValidator.h
+2025-11-27 19:38:24,396 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/test/CMakeLists.txt
+2025-11-27 19:38:24,528 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/test/TTSThunderAPITest.cpp
+2025-11-27 19:38:24,635 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/test/Module.h
+2025-11-27 19:38:24,793 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/CMakeLists.txt
+2025-11-27 19:38:24,905 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/Module.h
+2025-11-27 19:38:27,517 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 293, Duration: 0ms
+2025-11-27 19:38:27,523 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 6ms
+2025-11-27 19:38:27,527 - Knowledge - INFO - Progress: 68.1% | Files: 154/226 | Rate: 0.85 files/sec | Queue: 0
+2025-11-27 19:38:32,312 - Knowledge - INFO - [LLM_CALL] Completed: UtilsJsonRpc.h:chunk1, Duration: 184567ms, PromptTokens: 3922, CompletionTokens: 353, Cost: $0.00053
+2025-11-27 19:38:32,313 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsJsonRpc.h
+2025-11-27 19:38:38,089 - Knowledge - INFO - [LLM_CALL] Completed: FrameworkRPC.cpp:chunk1, Duration: 188004ms, PromptTokens: 24612, CompletionTokens: 1062, Cost: $0.00289
+2025-11-27 19:38:38,097 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/FrameworkRPC.cpp
+2025-11-27 19:38:38,662 - Knowledge - INFO - Processing batch of 10 files
+2025-11-27 19:38:38,663 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/SystemAudioPlayer/SystemAudioPlayer.h
+2025-11-27 19:38:38,685 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/services.cmake
+2025-11-27 19:38:38,776 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/OCDM.h
+2025-11-27 19:38:38,847 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/Module.cpp
+2025-11-27 19:38:38,965 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/CENCParser.cpp
+2025-11-27 19:38:39,081 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/FrameworkRPC.cpp
+2025-11-27 19:38:39,137 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/CHANGELOG.md
+2025-11-27 19:38:39,188 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/CENCParser.h
+2025-11-27 19:38:39,259 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/CMakeLists.txt
+2025-11-27 19:38:39,306 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/OCDMJsonRpc.cpp
+2025-11-27 19:38:41,276 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 293, Duration: 0ms
+2025-11-27 19:38:41,295 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 19ms
+2025-11-27 19:38:41,301 - Knowledge - INFO - Progress: 72.6% | Files: 164/226 | Rate: 0.84 files/sec | Queue: 0
+2025-11-27 19:38:43,189 - Knowledge - INFO - [LLM_CALL] Completed: PluginInterfaceBuilder.h:chunk1, Duration: 195282ms, PromptTokens: 2842, CompletionTokens: 561, Cost: $0.00051
+2025-11-27 19:38:43,190 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/PluginInterfaceBuilder.h
+2025-11-27 19:38:44,820 - Knowledge - INFO - Processing batch of 15 files
+2025-11-27 19:38:44,824 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsJsonRpc.h
+2025-11-27 19:38:45,021 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsgetRFCConfig.h
+2025-11-27 19:38:45,489 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsInputValidator.h
+2025-11-27 19:38:45,674 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/PowerManagerInterface.h
+2025-11-27 19:38:45,732 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsTelemetry.h
+2025-11-27 19:38:45,903 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/PluginInterfaceBuilder.h
+2025-11-27 19:38:45,989 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsgetFileContent.h
+2025-11-27 19:38:46,224 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilssyncPersistFile.h
+2025-11-27 19:38:46,291 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsSearchRDKProfile.h
+2025-11-27 19:38:46,380 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsCStr.h
+2025-11-27 19:38:46,539 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsBIT.h
+2025-11-27 19:38:46,764 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsThreadRAII.h
+2025-11-27 19:38:46,818 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/frontpanel.cpp
+2025-11-27 19:38:46,916 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/UtilsLogging.h
+2025-11-27 19:38:47,174 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/helpers/WebSockets/PingPong/PingPongEnabled.h
+2025-11-27 19:38:51,869 - Knowledge - INFO - [LLM_CALL] Completed: TTSConfiguration.h:chunk1, Duration: 202642ms, PromptTokens: 2884, CompletionTokens: 1718, Cost: $0.00098
+2025-11-27 19:38:51,877 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSConfiguration.h
+2025-11-27 19:38:51,920 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSDownloader.cpp after 90s
+2025-11-27 19:38:51,927 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSManager.cpp after 90s
+2025-11-27 19:38:54,181 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 293, Duration: 0ms
+2025-11-27 19:38:54,202 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 21ms
+2025-11-27 19:38:54,202 - Knowledge - INFO - Progress: 80.5% | Files: 182/226 | Rate: 0.88 files/sec | Queue: 0
+2025-11-27 19:38:57,518 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSManager.cpp not successfully processed
+2025-11-27 19:38:57,519 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSDownloader.cpp not successfully processed
+2025-11-27 19:38:57,835 - Knowledge - INFO - Processing batch of 10 files
+2025-11-27 19:38:57,859 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/NetworkStatusObserver.h
+2025-11-27 19:38:58,159 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/NetworkStatusObserver.cpp
+2025-11-27 19:38:58,430 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSSpeaker.cpp
+2025-11-27 19:38:58,888 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSURLConstructer.h
+2025-11-27 19:39:00,074 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSURLConstructer.cpp
+2025-11-27 19:39:00,212 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/RFCURLObserver.cpp
+2025-11-27 19:39:00,389 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/logger.h
+2025-11-27 19:39:00,878 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSDownloader.h
+2025-11-27 19:39:01,474 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSConfiguration.h
+2025-11-27 19:39:01,704 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/TextToSpeech/impl/TTSCommon.h
+2025-11-27 19:39:07,678 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 290, Duration: 0ms
+2025-11-27 19:39:07,691 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 12ms
+2025-11-27 19:39:07,691 - Knowledge - INFO - Progress: 83.6% | Files: 189/226 | Rate: 0.86 files/sec | Queue: 0
+2025-11-27 19:39:51,706 - Knowledge - ERROR - Failed to parse LLM response as JSON for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/DeviceSettings/PlatformImplementation.cpp, chunk 1
+2025-11-27 19:39:51,712 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/DeviceSettings/PlatformImplementation.cpp
+2025-11-27 19:39:52,017 - Knowledge - INFO - [LLM_CALL] Completed: DTVImpl.cpp:chunk1, Duration: 263232ms, PromptTokens: 29156, CompletionTokens: 8000, Cost: $0.00612
+2025-11-27 19:39:52,018 - Knowledge - ERROR - Failed to parse LLM response as JSON for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/DTVImpl.cpp, chunk 1
+2025-11-27 19:39:52,019 - Knowledge - INFO - done ingest for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/DTVImpl.cpp
+2025-11-27 19:39:52,020 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/DTV.cpp after 90s
+2025-11-27 19:39:52,020 - Knowledge - ERROR - Timeout processing /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/DTVImpl.h after 90s
+2025-11-27 19:39:52,046 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/DTV.cpp not successfully processed
+2025-11-27 19:39:52,052 - Knowledge - WARNING - File /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/DTVImpl.h not successfully processed
+2025-11-27 19:39:52,054 - Knowledge - INFO - Processing batch of 10 files
+2025-11-27 19:39:52,054 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/Module.h
+2025-11-27 19:39:52,055 - Knowledge - INFO - Processing batch of 8 files
+2025-11-27 19:39:52,057 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/LinearPlaybackControl.h
+2025-11-27 19:39:52,060 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/OCDM.cpp
+2025-11-27 19:39:52,064 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/OpenCDMi/Module.h
+2025-11-27 19:39:52,065 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/DTVImpl.cpp
+2025-11-27 19:39:52,068 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/LinearPlaybackControl/DemuxerStreamFsFCC.cpp
+2025-11-27 19:39:52,071 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/DeviceSettings/PlatformImplementation.cpp
+2025-11-27 19:39:52,072 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/Module.cpp
+2025-11-27 19:39:52,073 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/DTV.h
+2025-11-27 19:39:52,078 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/GStreamer/PlatformImplementation.cpp
+2025-11-27 19:39:52,080 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/Module.cpp
+2025-11-27 19:39:52,082 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/CHANGELOG.md
+2025-11-27 19:39:52,084 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/PlayerInfo.h
+2025-11-27 19:39:52,085 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/CHANGELOG.md
+2025-11-27 19:39:52,086 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/CMakeLists.txt
+2025-11-27 19:39:52,088 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/Dolby/include/Dolby.h
+2025-11-27 19:39:52,088 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/DTV/cmake/FindDTVKit.cmake
+2025-11-27 19:39:52,090 - Knowledge - INFO - process ingested knowledge for /home/kathan/Kathan/Kavia_AI/New_Clone/graphnode-backend-api/data/b2c/12517/b2989zz/entservices-mediaanddrm-12517/PlayerInfo/Dolby/CMakeLists.txt
+2025-11-27 19:39:52,363 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 273, Duration: 0ms
+2025-11-27 19:39:52,365 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 2ms
+2025-11-27 19:39:52,367 - Knowledge - INFO - Progress: 91.6% | Files: 207/226 | Rate: 0.78 files/sec | Queue: 0
+2025-11-27 19:39:52,425 - Knowledge - INFO - Knowledge creation complete
+2025-11-27 19:39:52,426 - Knowledge - INFO - ==================================================
+2025-11-27 19:39:52,426 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2025-11-27 19:39:52,426 - Knowledge - INFO - ==================================================
+2025-11-27 19:39:52,426 - Knowledge - INFO - Total processing time: 266.09 seconds (4.43 minutes)
+2025-11-27 19:39:52,426 - Knowledge - INFO - Files processed: 0
+2025-11-27 19:39:52,427 - Knowledge - INFO - Processing rate: 0.00 files/second
+2025-11-27 19:39:52,428 - Knowledge - INFO - 
+[TIME_BREAKDOWN]
+2025-11-27 19:39:52,428 - Knowledge - INFO - File Reading: 0.00s (0.0%)
+2025-11-27 19:39:52,428 - Knowledge - INFO - LLM Processing: 5882.73s (2210.8%)
+2025-11-27 19:39:52,429 - Knowledge - INFO - MongoDB Operations: 0.00s (0.0%)
+2025-11-27 19:39:52,429 - Knowledge - INFO - Redis Operations: 0.00s (0.0%)
+2025-11-27 19:39:52,431 - Knowledge - INFO - WebSocket Communication: 0.18s (0.1%)
+2025-11-27 19:39:52,431 - Knowledge - INFO - 
+[LLM_STATS]
+2025-11-27 19:39:52,431 - Knowledge - INFO - Total LLM calls: 56
+2025-11-27 19:39:52,432 - Knowledge - INFO - Average LLM response time: 105049ms
+2025-11-27 19:39:52,432 - Knowledge - INFO - Average prompt tokens: 5497.6
+2025-11-27 19:39:52,433 - Knowledge - INFO - Average completion tokens: 828.5
+2025-11-27 19:39:52,433 - Knowledge - INFO - Total prompt tokens: 307864
+2025-11-27 19:39:52,434 - Knowledge - INFO - Total completion tokens: 46396
+2025-11-27 19:39:52,434 - Knowledge - INFO - Total LLM cost: $0.0493
+2025-11-27 19:39:52,434 - Knowledge - INFO - 
+[DATABASE_STATS]
+2025-11-27 19:39:52,434 - Knowledge - INFO - MongoDB operations: 0
+2025-11-27 19:39:52,435 - Knowledge - INFO - Redis operations: 0
+2025-11-27 19:39:52,435 - Knowledge - INFO - 
+[COMMUNICATION_STATS]
+2025-11-27 19:39:52,435 - Knowledge - INFO - WebSocket messages sent: 32
+2025-11-27 19:39:52,435 - Knowledge - INFO - Average message size: 144.6 bytes
+2025-11-27 19:39:52,436 - Knowledge - INFO - 
+[WORKER_STATS]
+2025-11-27 19:39:52,437 - Knowledge - INFO - 
+[FILE_TYPE_STATS]
+2025-11-27 19:39:52,437 - Knowledge - INFO - 
+[SLOWEST_FILES]
+2025-11-27 19:39:52,437 - Knowledge - INFO - ==================================================
+2025-11-27 19:39:52,438 - Knowledge - INFO - ==================================================
+2025-11-27 19:39:52,438 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2025-11-27 19:39:52,439 - Knowledge - INFO - ==================================================
+2025-11-27 19:39:52,442 - Knowledge - INFO - Total processing time: 266.12 seconds (4.44 minutes)
+2025-11-27 19:39:52,442 - Knowledge - INFO - Files processed: 207 of 226
+2025-11-27 19:39:52,443 - Knowledge - INFO - Processing rate: 0.78 files/second
+2025-11-27 19:39:52,444 - Knowledge - INFO - WebSocket messages sent: 16
+2025-11-27 19:39:52,444 - Knowledge - INFO - MongoDB operations: 207
+2025-11-27 19:39:52,444 - Knowledge - INFO - Average MongoDB ops per file: 1.00
+2025-11-27 19:39:52,446 - Knowledge - INFO - LLM costs: $0.0537
+2025-11-27 19:39:52,446 - Knowledge - INFO - Prompt tokens: 319666
+2025-11-27 19:39:52,447 - Knowledge - INFO - Completion tokens: 54396
+2025-11-27 19:39:52,447 - Knowledge - INFO - Updating org costs, total cost: 0.053724999999999995
+2025-11-27 19:39:58,611 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 269, Duration: 0ms
+2025-11-27 19:39:58,613 - Knowledge - INFO - Saving knowledge to Redis...
+2025-11-27 19:39:58,649 - Knowledge - INFO - Knowledge saved to Redis successfully
